@@ -8,7 +8,7 @@ const articleSchema = mongoose.Schema({
   price: { type: Number, required: true },
   content: { type: String, required: true },
   stock: { type: Number, required: true },
-  status: { type: Boolean, required: true },
+  online: { type: Boolean, required: true },
   avis: [{ type: mongoose.Schema.Types.ObjectId, ref: "Avis" }],
   picture: [
     {
